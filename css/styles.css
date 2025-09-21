@@ -1,3 +1,28 @@
+ .redes {
+   display: flex;
+   flex-direction: row;
+   /* Iconos en columna */
+   align-items: end;
+   gap: 0;
+   /* Espacio entre iconos */
+ }
+
+
+ .redes .icon {
+   color: white;
+   padding-left: 45%;
+   font-size: 32px;
+
+   transition: color 0.2s;
+ }
+
+ .redes .icon:hover {
+   color: #797979;
+ }
+
+
+
+
  .acciones .btn {
    font-family: 'Roboto', Arial, Helvetica, sans-serif;
    font-weight: 700;
@@ -63,30 +88,105 @@
  }
 
  footer {
-   background: linear-gradient(to right,
-       rgba(78, 58, 58, 0.05),
-       rgba(255, 255, 255, 0.15),
-       rgba(78, 58, 58, 0.05));
+   background: linear-gradient(to right, rgba(78, 58, 58, 0.05), rgba(255, 255, 255, 0.15), rgba(78, 58, 58, 0.05));
    backdrop-filter: blur(8px);
    -webkit-backdrop-filter: blur(8px);
    border-top: 1px solid rgba(255, 255, 255, 0.3);
    border-radius: 10px 10px 0 0;
    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
    text-align: center;
-   padding: 20px 10px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   padding: 8px 0 0 0;
+   position: relative;
+   font-family: Montserrat, Arial, Helvetica, sans-serif
  }
 
- footer .pepito {
+ .footer-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    max-width: 1200px;
    margin: 0 auto;
+   padding: 15px 10px; 
  }
 
- footer p {
-   margin: 5px 0;
+ .copy {
    font-size: 14px;
-   color: rgb(255, 255, 255);
+   color: #fff;
+   align-self: center;
+   padding-right: 4%;
+   margin-bottom: 8px;
  }
+
+ .redes {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   gap: 10rem;
+   padding-left: 100%;
+   text-decoration: none;
+ }
+
+ .red-social {
+   display: flex;
+   align-items: center;
+   gap: 0rem;
+   color: #fff;
+   font-size: 1rem;
+   
+ }
+ .btn-instagram a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;   
+  color: white;      
+  text-decoration: none; 
+}
+
+.btn-whatsapp a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;   
+  color: white;      
+  text-decoration: none; 
+}
+
+
+ .red-social i {
+   font-size: 1.5rem;
+   color: #fff;
+   transition: color 0.2s;
+ }
+
+ .red-social i:hover {
+   color: #ffffff;
+ }
+
+ .nombre {
+   font-weight: 600;
+   margin-right: 0.3rem;
+ }
+
+
+ /* Responsive: Footer en columna y centrado en móvil */
+ @media (max-width: 768px) {
+   .footer-content {
+     flex-direction: column;
+     align-items: center;
+     gap: 0.7rem;
+   }
+
+   .redes {
+     align-items: center;
+   }
+
+   .copy {
+     align-self: center;
+     margin-bottom: 0;
+   }
+ }
+
 
  .card {
    border: 2px solid #ccc;
