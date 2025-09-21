@@ -28,7 +28,7 @@
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8rem 3rem;
+    gap: 3rem;
     justify-items: center;
     margin: 4rem auto;
     
