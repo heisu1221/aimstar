@@ -348,14 +348,16 @@ nav {
 nav .logo button {
   float: left;
   font-family: outfit, Arial, Helvetica, sans-serif;
+  content: none;
+  text-align: center;
   width: 15%;
-  padding-top: 25px;
+  padding-top: 1.4%;
   border: none;
   height: 100%;
   display: flex;
   align-items: center;
   font-size: 40px;
-  background-color: #53535300;
+  background-color: #ffffff00;
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
@@ -365,8 +367,6 @@ nav .logo button {
 
 nav .logo button:hover {
   color: rgba(255, 151, 151, 0.616);
-  border-color: #000000;
-  outline-color: #ffffff;
   cursor: pointer;
   text-shadow: #00000060 0px 0px 10px;
   transform: translateX(5px);
@@ -377,7 +377,7 @@ nav .list {
   padding: 0;
   margin: 0;
   width: 40%;
-  height: 68px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -406,16 +406,13 @@ nav .list a::after {
   display: block;
   margin: 0 auto;
   width: 39px;
-  /* Largo de la barra */
   height: 4px;
-  /* Grosor de la barra */
   background: #b90e0a;
   border-radius: 2px;
   position: absolute;
   left: 50%;
   bottom: 5px;
   transform: translateX(-50%) translateY(10px);
-  /* Empieza 10px abajo */
   opacity: 0;
   transition: opacity 0.25s, transform 0.25s;
 }
