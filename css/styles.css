@@ -102,7 +102,7 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: center; /* centra horizontalmente */
+  justify-content: right; /* centra horizontalmente */
   align-items: center; /* centra verticalmente */
   width: 100%; /* usar todo el ancho */
   margin: 0 auto;
@@ -114,7 +114,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center; /* 🔹 centra los iconos */
-  gap: 20rem; /* espacio entre íconos */
+  gap: 1rem; /* espacio entre íconos */
   text-decoration: none;
 }
 
