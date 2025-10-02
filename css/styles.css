@@ -391,6 +391,49 @@ nav .list {
   margin-right: 20px; 
 }
 
+.hero {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: url('tu-imagen-fondo.jpg') center/cover no-repeat; 
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hero-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+.hero p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 nav .list li {
   list-style: none;
 }
