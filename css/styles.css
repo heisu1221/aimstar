@@ -507,14 +507,14 @@ nav .icon-bars .line {
     position: fixed;
     z-index: 9;
     left: 0;
-    right: 0;
+    
     top: 100px;
     bottom: 100%;
     width: 100%;
     height: auto;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.90);
     overflow: hidden;
     transition: all 0.5s ease-in-out;
   }
