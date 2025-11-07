@@ -106,6 +106,14 @@ footer {
   margin: 0 auto;
   padding: 15px 10px;
 }
+.texto-footer {
+
+  text-shadow: #00000060 0px 0px 10px;
+  font-weight: 600;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 15px;
+}
 
 .redes {
   display: flex;
