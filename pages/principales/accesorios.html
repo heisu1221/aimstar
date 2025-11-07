@@ -2,26 +2,34 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accesorios - Aimstar</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body>
+  <video autoplay muted loop id="bg-video2">
+    <source src="/vid/Sin-título_1.mp4" type="video/mp4" />
+    Tu navegador no soporta video.
+  </video>
+  <div class="video-overlay2"></div>
   <header>
     <nav>
       <div class="logo">
         <a href="index.html"><button>Aimstar</button></a>
       </div>
 
-      <input type="checkbox" id="toggle">
+      <input type="checkbox" id="toggle" />
       <ul class="list">
+
         <li><a href="mouse.html">Mouse</a></li>
-        <li><a href="teclados.html">Teclado</a></li>
-        <li><a href="accesorios.html" class="active">Accesorios</a></li>
+        <li><a href="teclados.html" class="active">Teclado</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
       </ul>
 
       <label for="toggle" class="icon-bars">
@@ -33,22 +41,39 @@
   </header>
 
   <main>
-    <section class="productos">
-      <h1>Accesorios disponibles</h1>
-
-      <article class="producto">
-        <img src="../img/headset.png" alt="Headset Gamer">
-        <h2>Headset Gamer</h2>
-        <p>Audio envolvente, micrófono con cancelación de ruido, almohadillas cómodas.</p>
-        <button>Comprar</button>
-      </article>
-
-      <article class="producto">
-        <img src="../img/mousepad.png" alt="Mousepad XL">
-        <h2>Mousepad XL</h2>
-        <p>Superficie optimizada para precisión, base antideslizante, tamaño extendido.</p>
-        <button>Comprar</button>
-      </article>
+    <section class="productos-grid">
+      <div class="card producto" style="width: 24rem;">
+        <img src="/img/accesorio1.png" class="imagenteclado" alt="../img/teclado1.png">
+        <div class="card-body">
+          <h5 class="card-title">KZ EDX PRO</h5>
+          <div class="acciones">
+            <a href="#" class="btn btn-primary">Ver más</a>
+            <a href="#" class="btn btn-success">Comprar</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="card producto" style="width: 24rem;">
+        <img src="/img/accesorio2.png" class="imagenteclado" alt="">
+        <div class="card-body">
+          <h5 class="card-title">ASTRO A50 X</h5>
+          <div class="acciones">
+            <a href="#" class="btn btn-primary">Ver más</a>
+            <a href="#" class="btn btn-success">Comprar</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="card producto" style="width: 24rem;">
+        <img src="/img/glidex.png" class="imagenteclado" alt="../img/teclado3.png">
+        <div class="card-body">
+          <h5 class="card-title">Dot Skates</h5>
+          <div class="acciones">
+            <a href="#" class="btn btn-primary">Ver más</a>
+            <a href="#" class="btn btn-success">Comprar</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>
